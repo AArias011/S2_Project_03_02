@@ -14,20 +14,24 @@
 
 
 /* Structural Styles */
+/* This set of code set the background color for the html element. */
 html {
     background-color: rgb(173, 189, 227);
 }
 
+/* This set of code sets the font and background color of the body element in the rendered page. */
 body {
     background-color: rgb(227, 210, 173);
     font-family: 'Century Gothic', sans-serif;
 }
 
+/* This set of code sets the background color of the footer in the rendered page. It also sets the bottom padding to 5 pixels. */
 body footer {
     background-color: rgb(208, 184, 109);
     padding-bottom: 5px;
 }
 
+/* This set of code changes the font style and size of the address element. It also changes the top and bottom padding to 10 pixels and that basically creates space between the text. */
 address {
     font-style: normal;
     font-size: 0.9em;
@@ -40,25 +44,30 @@ address {
 
 
 /* Heading Styles */
-h1>h2 {
+/* this set of code changes the font weight of the h1 and h2 heading to normal. */
+h1,
+h2 {
     font-weight: normal;
 }
 
 
 
 /* Navigation Styles */
+/* This set of code sets the list style, line height and font size of every unordered list in the navigation. */
 nav>ul {
     list-style: none;
     line-height: 2em;
     font-size: 0.9em;
 }
 
+/* This set of code affects the hypertext link in every link thats in every unordered list thats in the navigation. It sets the hypertext links to a certain color. The text-decoration: none; takes off the underlines on the links.*/
 nav>ul>li>a:visited,
 nav>ul>li>a:link {
     color: rgb(43, 59, 125);
     text-decoration: none;
 }
 
+/* This set of code sets whatever is active and when you hover over it, it changes to the color that you set it to. */
 nav>ul>li>a:active,
 nav>ul>li>a:hover {
     color: rgb(212, 35, 35);
@@ -66,25 +75,77 @@ nav>ul>li>a:hover {
 
 
 /* Article Styles */
-#tour_summary h1 {
+/* This set of code sets the id which is tour_summary to h1 that is in the article to a certain font size and letter spacing. */
+article#tour_summary h1 {
     font-size: 2.2em;
     letter-spacing: 0.2em;
 }
 
-p#tour_summary h1 {
+/* This set of code sets the id which is tour_summary to the p element in the article to a certain font size. */
+article#tour_summary p {
     font-size: 1.1em;
 }
 
-article#tour_summary {
+
+/* This set of code affects only the first line of the first paragraph. It sets the font size and the font-variant: small-caps; makes the first line of the paragraph into small caps. */
+article#tour_summary p:first-of-type:first-line {
     font-size: 1.2em;
+    font-variant: small-caps;
 }
 
 
-
-
 /* Aside Styles */
+/* This set of code sets the id which is tour_itinerary towards the article element and it sets a certain font size. */
+article#tour_itinerary {
+    font-size: 1.2em;
+}
+
+/* This set of code sets a certain font size to the h2 element thats in the aside. */
+aside#tour_itinerary h2 {
+    font-size: 0.9em;
+}
+
+/* This set of code sets the font size of the paragraphs in the aside. */
+aside#tour_itinerary p {
+    font-size: 0.8em;
+}
+
+/* This sets of code sets the odd numbers of the h2 headings in the aside element to a certain color. */
+aside h2:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+/* This set of code sets the odd numbers of the paragraph element in the aside element to a certain color.*/
+aside p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+/* This set of code sets the even numbers of the parargraphs elements in the aside to a certain color. */
+aside p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+
+}
+
+/* This set of code sets the even numbers of the h2 elements in the aside to a certain color. */
+aside h2:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
 
 
 
 
 /* Blockquote Styles */
+/* This set of code sets the background color, color and opacity of the blockquote. */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: 0.65;
+}
+
+/* This set of code affects the paragraphs in the blockqupte and it sets changes top, bottom, left and right paddings. */
+blockquote>p {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
